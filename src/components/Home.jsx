@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 import "../App.css";
+import Tahu from '../../public/img/Tahu.png'
+import FacebookLogo from '../../public/img/FacebookLogo.png'
+import TwitterLogo from '../../public/img/TwitterLogo.png'
+import InstagramLogo from '../../public/img/InstagramLogo.png'
 function Home() {
 
     return (
@@ -13,8 +17,8 @@ function Home() {
               className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1"
             >
               <img 
-                src="../../public/img/FacebookLogo.png"
-                alt="Facebook logo" 
+                src={FacebookLogo}
+                alt="Facebook Logo"
                 className="h-16 w-16 transition-transform hover:rotate-12"
               />
             </a>
@@ -26,7 +30,7 @@ function Home() {
               className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1"
             >
               <img 
-                src="../../public/img/InstagramLogo.png"
+                src={InstagramLogo}
                 alt="Instagram logo" 
                 className="h-16 w-16 transition-transform hover:rotate-12"
               />
@@ -39,7 +43,7 @@ function Home() {
               className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1"
             >
               <img 
-                src="../../public/img/TwitterLogo.png"
+                src={TwitterLogo}
                 alt="Twitter logo" 
                 className="h-16 w-16 transition-transform hover:rotate-12"
               />
@@ -47,7 +51,7 @@ function Home() {
           </div>
 
           <img 
-            src="../../public/img/Tahu.png"
+            src={Tahu}
             alt="Tahu Bulat image" 
             className="h-[500px] mx-auto mt-48 animate-bounce-slow"
           />

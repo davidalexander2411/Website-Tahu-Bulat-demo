@@ -1,4 +1,6 @@
 import useScrollAnimation from '../hooks/useScrollAnimation';
+import SotongMenu from '../../public/img/SotongMenu.jpg'
+import TahuBulatMenu from '../../public/img/TahuBulatMenu.jpg'
 
 const Menu = () => {
   const sectionRef = useScrollAnimation();
@@ -15,7 +17,7 @@ const Menu = () => {
 						<div>
 							<h2 className="text-4xl text-center figtree-bold mb-4">TAHU BULAT</h2>
 								<img
-								src="../public/img/TahuBulatMenu.jpg"
+								src={TahuBulatMenu}
 								alt="Tahu Bulat dish"
 								className="w-[400px] object-cover rounded-lg drop-shadow-2xl mb-4" />
 							<p className="text-center">
@@ -26,7 +28,7 @@ const Menu = () => {
 						<div>
 							<h2 className="text-4xl text-center figtree-bold mb-4">SOTONG</h2>
 							<img
-								src="../public/img/SotongMenu.jpg"
+								src={SotongMenu}
 								alt="Sotong dish"
 								className="w-[400px] object-cover rounded-lg drop-shadow-2xl mb-4" />
 							<p className="text-center">
