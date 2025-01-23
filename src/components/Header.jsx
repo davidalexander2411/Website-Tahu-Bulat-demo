@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { supabase } from '../supabaseClient';
 import { useNavigate } from 'react-router-dom';
 import ClaimVoucherModal from './ClaimVoucherModal';
+import Logo from '../../public/img/Logo.png'
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -76,7 +77,7 @@ const Header = () => {
             <div className="flex items-center justify-center mb-4">
               <a href="/">
               <img 
-                src="../public/img/Logo.png"
+                src={Logo}
                 alt="Tahu Bulat Logo" 
                 className={`w-96 object-contain transition-all duration-300 ${
                   isSticky 
